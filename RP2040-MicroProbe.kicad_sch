@@ -5,11 +5,11 @@
   (paper "A4")
 
   (title_block
-    (title "RP2040-DebugProbe-0010")
-    (date "2023-12-07")
+    (title "RP2040-MicroProbe-0010")
+    (date "2023-12-18")
     (rev "1.0")
     (company "(c) 2023 Andriy Golovnya")
-    (comment 1 "RP2040 based Debug Probe")
+    (comment 1 "RP2040 based Micro Debug Probe")
     (comment 2 "Designed in Germany")
   )
 
@@ -117,289 +117,162 @@
         )
       )
     )
-    (symbol "Connector:USB_C_Receptacle_USB2.0" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "J" (at -10.16 19.05 0)
+    (symbol "Connector:USB_B_Micro" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "J" (at -5.08 11.43 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Value" "USB_C_Receptacle_USB2.0" (at 19.05 19.05 0)
-        (effects (font (size 1.27 1.27)) (justify right))
+      (property "Value" "USB_B_Micro" (at -5.08 8.89 0)
+        (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Footprint" "" (at 3.81 0 0)
+      (property "Footprint" "" (at 3.81 -1.27 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" (at 3.81 0 0)
+      (property "Datasheet" "~" (at 3.81 -1.27 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "usb universal serial bus type-C USB2.0" (at 0 0 0)
+      (property "ki_keywords" "connector USB micro" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "USB 2.0-only Type-C Receptacle connector" (at 0 0 0)
+      (property "ki_description" "USB Micro Type B connector" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "USB*C*Receptacle*" (at 0 0 0)
+      (property "ki_fp_filters" "USB*" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "USB_C_Receptacle_USB2.0_0_0"
-        (rectangle (start -0.254 -17.78) (end 0.254 -16.764)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (rectangle (start 10.16 -14.986) (end 9.144 -15.494)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (rectangle (start 10.16 -12.446) (end 9.144 -12.954)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (rectangle (start 10.16 -4.826) (end 9.144 -5.334)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (rectangle (start 10.16 -2.286) (end 9.144 -2.794)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (rectangle (start 10.16 0.254) (end 9.144 -0.254)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (rectangle (start 10.16 2.794) (end 9.144 2.286)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (rectangle (start 10.16 7.874) (end 9.144 7.366)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (rectangle (start 10.16 10.414) (end 9.144 9.906)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (rectangle (start 10.16 15.494) (end 9.144 14.986)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "USB_C_Receptacle_USB2.0_0_1"
-        (rectangle (start -10.16 17.78) (end 10.16 -17.78)
+      (symbol "USB_B_Micro_0_1"
+        (rectangle (start -5.08 -7.62) (end 5.08 7.62)
           (stroke (width 0.254) (type default))
           (fill (type background))
         )
-        (arc (start -8.89 -3.81) (mid -6.985 -5.7067) (end -5.08 -3.81)
-          (stroke (width 0.508) (type default))
-          (fill (type none))
-        )
-        (arc (start -7.62 -3.81) (mid -6.985 -4.4423) (end -6.35 -3.81)
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (arc (start -7.62 -3.81) (mid -6.985 -4.4423) (end -6.35 -3.81)
+        (circle (center -3.81 2.159) (radius 0.635)
           (stroke (width 0.254) (type default))
           (fill (type outline))
         )
-        (rectangle (start -7.62 -3.81) (end -6.35 3.81)
+        (circle (center -0.635 3.429) (radius 0.381)
           (stroke (width 0.254) (type default))
           (fill (type outline))
         )
-        (arc (start -6.35 3.81) (mid -6.985 4.4423) (end -7.62 3.81)
+        (rectangle (start -0.127 -7.62) (end 0.127 -6.858)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.905 2.159)
+            (xy 0.635 2.159)
+          )
           (stroke (width 0.254) (type default))
           (fill (type none))
         )
-        (arc (start -6.35 3.81) (mid -6.985 4.4423) (end -7.62 3.81)
+        (polyline
+          (pts
+            (xy -3.175 2.159)
+            (xy -2.54 2.159)
+            (xy -1.27 3.429)
+            (xy -0.635 3.429)
+          )
           (stroke (width 0.254) (type default))
-          (fill (type outline))
-        )
-        (arc (start -5.08 3.81) (mid -6.985 5.7067) (end -8.89 3.81)
-          (stroke (width 0.508) (type default))
           (fill (type none))
         )
-        (circle (center -2.54 1.143) (radius 0.635)
+        (polyline
+          (pts
+            (xy -2.54 2.159)
+            (xy -1.905 2.159)
+            (xy -1.27 0.889)
+            (xy 0 0.889)
+          )
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0.635 2.794)
+            (xy 0.635 1.524)
+            (xy 1.905 2.159)
+            (xy 0.635 2.794)
+          )
           (stroke (width 0.254) (type default))
           (fill (type outline))
         )
-        (circle (center 0 -5.842) (radius 1.27)
+        (polyline
+          (pts
+            (xy -4.318 5.588)
+            (xy -1.778 5.588)
+            (xy -2.032 4.826)
+            (xy -4.064 4.826)
+            (xy -4.318 5.588)
+          )
           (stroke (width 0) (type default))
           (fill (type outline))
         )
         (polyline
           (pts
-            (xy -8.89 -3.81)
-            (xy -8.89 3.81)
+            (xy -4.699 5.842)
+            (xy -4.699 5.588)
+            (xy -4.445 4.826)
+            (xy -4.445 4.572)
+            (xy -1.651 4.572)
+            (xy -1.651 4.826)
+            (xy -1.397 5.588)
+            (xy -1.397 5.842)
+            (xy -4.699 5.842)
           )
-          (stroke (width 0.508) (type default))
+          (stroke (width 0) (type default))
           (fill (type none))
         )
-        (polyline
-          (pts
-            (xy -5.08 3.81)
-            (xy -5.08 -3.81)
-          )
-          (stroke (width 0.508) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -5.842)
-            (xy 0 4.318)
-          )
-          (stroke (width 0.508) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -3.302)
-            (xy -2.54 -0.762)
-            (xy -2.54 0.508)
-          )
-          (stroke (width 0.508) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -2.032)
-            (xy 2.54 0.508)
-            (xy 2.54 1.778)
-          )
-          (stroke (width 0.508) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.27 4.318)
-            (xy 0 6.858)
-            (xy 1.27 4.318)
-            (xy -1.27 4.318)
-          )
+        (rectangle (start 0.254 1.27) (end -0.508 0.508)
           (stroke (width 0.254) (type default))
           (fill (type outline))
         )
-        (rectangle (start 1.905 1.778) (end 3.175 3.048)
-          (stroke (width 0.254) (type default))
-          (fill (type outline))
-        )
-      )
-      (symbol "USB_C_Receptacle_USB2.0_1_1"
-        (pin passive line (at 0 -22.86 90) (length 5.08)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "A1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -22.86 90) (length 5.08) hide
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "A12" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 15.24 15.24 180) (length 5.08)
-          (name "VBUS" (effects (font (size 1.27 1.27))))
-          (number "A4" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 15.24 10.16 180) (length 5.08)
-          (name "CC1" (effects (font (size 1.27 1.27))))
-          (number "A5" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 15.24 -2.54 180) (length 5.08)
-          (name "D+" (effects (font (size 1.27 1.27))))
-          (number "A6" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 15.24 2.54 180) (length 5.08)
-          (name "D-" (effects (font (size 1.27 1.27))))
-          (number "A7" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 15.24 -12.7 180) (length 5.08)
-          (name "SBU1" (effects (font (size 1.27 1.27))))
-          (number "A8" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 15.24 15.24 180) (length 5.08) hide
-          (name "VBUS" (effects (font (size 1.27 1.27))))
-          (number "A9" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -22.86 90) (length 5.08) hide
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "B1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -22.86 90) (length 5.08) hide
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "B12" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 15.24 15.24 180) (length 5.08) hide
-          (name "VBUS" (effects (font (size 1.27 1.27))))
-          (number "B4" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 15.24 7.62 180) (length 5.08)
-          (name "CC2" (effects (font (size 1.27 1.27))))
-          (number "B5" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 15.24 -5.08 180) (length 5.08)
-          (name "D+" (effects (font (size 1.27 1.27))))
-          (number "B6" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 15.24 0 180) (length 5.08)
-          (name "D-" (effects (font (size 1.27 1.27))))
-          (number "B7" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 15.24 -15.24 180) (length 5.08)
-          (name "SBU2" (effects (font (size 1.27 1.27))))
-          (number "B8" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 15.24 15.24 180) (length 5.08) hide
-          (name "VBUS" (effects (font (size 1.27 1.27))))
-          (number "B9" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -7.62 -22.86 90) (length 5.08)
-          (name "SHIELD" (effects (font (size 1.27 1.27))))
-          (number "S1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Connector_Generic:Conn_01x02" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "J" (at 0 2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "Conn_01x02" (at 0 -5.08 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "connector" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Conn_01x02_1_1"
-        (rectangle (start -1.27 -2.413) (end 0 -2.667)
-          (stroke (width 0.1524) (type default))
+        (rectangle (start 5.08 -5.207) (end 4.318 -4.953)
+          (stroke (width 0) (type default))
           (fill (type none))
         )
-        (rectangle (start -1.27 0.127) (end 0 -0.127)
-          (stroke (width 0.1524) (type default))
+        (rectangle (start 5.08 -2.667) (end 4.318 -2.413)
+          (stroke (width 0) (type default))
           (fill (type none))
         )
-        (rectangle (start -1.27 1.27) (end 1.27 -3.81)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
+        (rectangle (start 5.08 -0.127) (end 4.318 0.127)
+          (stroke (width 0) (type default))
+          (fill (type none))
         )
-        (pin passive line (at -5.08 0 0) (length 3.81)
-          (name "Pin_1" (effects (font (size 1.27 1.27))))
+        (rectangle (start 5.08 4.953) (end 4.318 5.207)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "USB_B_Micro_1_1"
+        (pin power_out line (at 7.62 5.08 180) (length 2.54)
+          (name "VBUS" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at -5.08 -2.54 0) (length 3.81)
-          (name "Pin_2" (effects (font (size 1.27 1.27))))
+        (pin bidirectional line (at 7.62 -2.54 180) (length 2.54)
+          (name "D-" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin bidirectional line (at 7.62 0 180) (length 2.54)
+          (name "D+" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 7.62 -5.08 180) (length 2.54)
+          (name "ID" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+        (pin power_out line (at 0 -10.16 90) (length 2.54)
+          (name "GND" (effects (font (size 1.27 1.27))))
+          (number "5" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -2.54 -10.16 90) (length 2.54)
+          (name "Shield" (effects (font (size 1.27 1.27))))
+          (number "6" (effects (font (size 1.27 1.27))))
         )
       )
     )
-    (symbol "Connector_Generic:Conn_01x03" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "J" (at 0 5.08 0)
+    (symbol "Connector_Generic:Conn_01x06" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "J" (at 0 7.62 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "Conn_01x03" (at 0 -5.08 0)
+      (property "Value" "Conn_01x06" (at 0 -10.16 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (at 0 0 0)
@@ -411,13 +284,21 @@
       (property "ki_keywords" "connector" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
+      (property "ki_description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "Conn_01x03_1_1"
+      (symbol "Conn_01x06_1_1"
+        (rectangle (start -1.27 -7.493) (end 0 -7.747)
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (rectangle (start -1.27 -4.953) (end 0 -5.207)
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
         (rectangle (start -1.27 -2.413) (end 0 -2.667)
           (stroke (width 0.1524) (type default))
           (fill (type none))
@@ -430,21 +311,37 @@
           (stroke (width 0.1524) (type default))
           (fill (type none))
         )
-        (rectangle (start -1.27 3.81) (end 1.27 -3.81)
+        (rectangle (start -1.27 5.207) (end 0 4.953)
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (rectangle (start -1.27 6.35) (end 1.27 -8.89)
           (stroke (width 0.254) (type default))
           (fill (type background))
         )
-        (pin passive line (at -5.08 2.54 0) (length 3.81)
+        (pin passive line (at -5.08 5.08 0) (length 3.81)
           (name "Pin_1" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at -5.08 0 0) (length 3.81)
+        (pin passive line (at -5.08 2.54 0) (length 3.81)
           (name "Pin_2" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at -5.08 -2.54 0) (length 3.81)
+        (pin passive line (at -5.08 0 0) (length 3.81)
           (name "Pin_3" (effects (font (size 1.27 1.27))))
           (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -5.08 -2.54 0) (length 3.81)
+          (name "Pin_4" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -5.08 -5.08 0) (length 3.81)
+          (name "Pin_5" (effects (font (size 1.27 1.27))))
+          (number "5" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -5.08 -7.62 0) (length 3.81)
+          (name "Pin_6" (effects (font (size 1.27 1.27))))
+          (number "6" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -859,6 +756,176 @@
         )
       )
     )
+    (symbol "EVPBB0AAB000:EVPBB0AAB000" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "S" (at -2.54 2.54 0)
+        (effects (font (size 1.27 1.27)) (justify left bottom))
+      )
+      (property "Value" "EVPBB0AAB000" (at -2.54 -2.54 0)
+        (effects (font (size 1.27 1.27)) (justify left top))
+      )
+      (property "Footprint" "SW_EVPBB0AAB000" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) (justify bottom) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ARROW_ELECTRONICS-PURCHASE-URL" "https://snapeda.com/shop?store=Arrow+Electronics&id=584571" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) (justify bottom) hide)
+      )
+      (property "MOUSER-PURCHASE-URL" "https://snapeda.com/shop?store=Mouser&id=584571" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) (justify bottom) hide)
+      )
+      (property "MAXIMUM_PACKAGE_HEIGHT" "0.58mm" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) (justify bottom) hide)
+      )
+      (property "PACKAGE" "None" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) (justify bottom) hide)
+      )
+      (property "MF" "Panasonic Electronic" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) (justify bottom) hide)
+      )
+      (property "MP" "EVPBB0AAB000" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) (justify bottom) hide)
+      )
+      (property "DIGIKEY-PURCHASE-URL" "https://snapeda.com/shop?store=DigiKey&id=584571" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) (justify bottom) hide)
+      )
+      (property "DIGI-KEY_PART_NUMBER" "P19888CT-ND" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) (justify bottom) hide)
+      )
+      (property "DESCRIPTION" "Tactile Switch SPST-NO Top Actuated Surface Mount" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) (justify bottom) hide)
+      )
+      (symbol "EVPBB0AAB000_0_0"
+        (polyline
+          (pts
+            (xy -5.08 2.54)
+            (xy -5.08 -2.54)
+          )
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -2.54 0)
+            (xy -5.08 0)
+          )
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -2.54 0)
+            (xy 2.794 2.1336)
+          )
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 5.08 0)
+            (xy 2.921 0)
+          )
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 5.08 2.54)
+            (xy 5.08 -2.54)
+          )
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (circle (center 2.54 0) (radius 0.3302)
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (pin passive line (at -7.62 2.54 0) (length 2.54)
+          (name "~" (effects (font (size 1.016 1.016))))
+          (number "A1" (effects (font (size 1.016 1.016))))
+        )
+        (pin passive line (at -7.62 -2.54 0) (length 2.54)
+          (name "~" (effects (font (size 1.016 1.016))))
+          (number "A2" (effects (font (size 1.016 1.016))))
+        )
+        (pin passive line (at 7.62 2.54 180) (length 2.54)
+          (name "~" (effects (font (size 1.016 1.016))))
+          (number "B1" (effects (font (size 1.016 1.016))))
+        )
+        (pin passive line (at 7.62 -2.54 180) (length 2.54)
+          (name "~" (effects (font (size 1.016 1.016))))
+          (number "B2" (effects (font (size 1.016 1.016))))
+        )
+      )
+    )
+    (symbol "Jumper:SolderJumper_2_Open" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "JP" (at 0 2.032 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "SolderJumper_2_Open" (at 0 -2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "solder jumper SPST" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Solder Jumper, 2-pole, open" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "SolderJumper*Open*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "SolderJumper_2_Open_0_1"
+        (arc (start -0.254 1.016) (mid -1.2656 0) (end -0.254 -1.016)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (arc (start -0.254 1.016) (mid -1.2656 0) (end -0.254 -1.016)
+          (stroke (width 0) (type default))
+          (fill (type outline))
+        )
+        (polyline
+          (pts
+            (xy -0.254 1.016)
+            (xy -0.254 -1.016)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0.254 1.016)
+            (xy 0.254 -1.016)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (arc (start 0.254 -1.016) (mid 1.2656 0) (end 0.254 1.016)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (arc (start 0.254 -1.016) (mid 1.2656 0) (end 0.254 1.016)
+          (stroke (width 0) (type default))
+          (fill (type outline))
+        )
+      )
+      (symbol "SolderJumper_2_Open_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54)
+          (name "A" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54)
+          (name "B" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "MCU_RaspberryPi:RP2040" (in_bom yes) (on_board yes)
       (property "Reference" "U" (at 17.78 45.72 0)
         (effects (font (size 1.27 1.27)))
@@ -1248,228 +1315,54 @@
         )
       )
     )
-    (symbol "Power_Protection:PRTR5V0U2X" (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "D" (at 2.794 8.636 0)
+    (symbol "Regulator_Linear:MIC5205-3.3YM5" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
+      (property "Reference" "U" (at -3.81 5.715 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "PRTR5V0U2X" (at 8.128 -9.398 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "Package_TO_SOT_SMD:SOT-143" (at 1.524 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PRTR5V0U2X.pdf" (at 1.524 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "ESD protection diode" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Ultra low capacitance double rail-to-rail ESD protection diode, SOT-143" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "SOT?143*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "PRTR5V0U2X_0_1"
-        (rectangle (start -7.62 -7.62) (end 7.62 7.62)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-        (circle (center -2.54 0) (radius 0.254)
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-        (rectangle (start -2.54 6.35) (end 2.54 -6.35)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (circle (center 0 -6.35) (radius 0.254)
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-        (polyline
-          (pts
-            (xy -2.54 0)
-            (xy -7.62 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.524 -2.794)
-            (xy -3.556 -2.794)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.524 4.826)
-            (xy -3.556 4.826)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -7.62)
-            (xy 0 7.62)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.524 -2.794)
-            (xy 3.556 -2.794)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.524 4.826)
-            (xy 3.556 4.826)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 2.54 0)
-            (xy 7.62 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.016 1.016)
-            (xy -1.016 1.016)
-            (xy -1.016 0.508)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -3.556 -4.826)
-            (xy -1.524 -4.826)
-            (xy -2.54 -2.794)
-            (xy -3.556 -4.826)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -3.556 2.794)
-            (xy -1.524 2.794)
-            (xy -2.54 4.826)
-            (xy -3.556 2.794)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.016 -1.016)
-            (xy 1.016 -1.016)
-            (xy 0 1.016)
-            (xy -1.016 -1.016)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 3.556 -4.826)
-            (xy 1.524 -4.826)
-            (xy 2.54 -2.794)
-            (xy 3.556 -4.826)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 3.556 2.794)
-            (xy 1.524 2.794)
-            (xy 2.54 4.826)
-            (xy 3.556 2.794)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (circle (center 0 6.35) (radius 0.254)
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-        (circle (center 2.54 0) (radius 0.254)
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-      )
-      (symbol "PRTR5V0U2X_1_1"
-        (pin passive line (at 0 -12.7 90) (length 5.08)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -12.7 0 0) (length 5.08)
-          (name "I/O1" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 12.7 0 180) (length 5.08)
-          (name "I/O2" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 12.7 270) (length 5.08)
-          (name "VCC" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Regulator_Linear:AMS1117-3.3" (in_bom yes) (on_board yes)
-      (property "Reference" "U" (at -3.81 3.175 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "AMS1117-3.3" (at 0 3.175 0)
+      (property "Value" "MIC5205-3.3YM5" (at 0 5.715 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2" (at 0 5.08 0)
+      (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (at 0 8.255 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf" (at 2.54 -6.35 0)
+      (property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/20005785A.pdf" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "linear regulator ldo fixed positive" (at 0 0 0)
+      (property "ki_keywords" "150mA low-noise LDO linear voltage regulator fixed positive" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223" (at 0 0 0)
+      (property "ki_description" "150mA low dropout linear regulator, fixed 3.3V output, SOT-23-5" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "SOT?223*TabPin2*" (at 0 0 0)
+      (property "ki_fp_filters" "SOT?23*" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "AMS1117-3.3_0_1"
-        (rectangle (start -5.08 -5.08) (end 5.08 1.905)
+      (symbol "MIC5205-3.3YM5_0_1"
+        (rectangle (start -5.08 4.445) (end 5.08 -5.08)
           (stroke (width 0.254) (type default))
           (fill (type background))
         )
       )
-      (symbol "AMS1117-3.3_1_1"
-        (pin power_in line (at 0 -7.62 90) (length 2.54)
-          (name "GND" (effects (font (size 1.27 1.27))))
+      (symbol "MIC5205-3.3YM5_1_1"
+        (pin power_in line (at -7.62 2.54 0) (length 2.54)
+          (name "IN" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
-        (pin power_out line (at 7.62 0 180) (length 2.54)
-          (name "VO" (effects (font (size 1.27 1.27))))
+        (pin power_in line (at 0 -7.62 90) (length 2.54)
+          (name "GND" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
         )
-        (pin power_in line (at -7.62 0 0) (length 2.54)
-          (name "VI" (effects (font (size 1.27 1.27))))
+        (pin input line (at -7.62 0 0) (length 2.54)
+          (name "EN" (effects (font (size 1.27 1.27))))
           (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin input line (at 7.62 0 180) (length 2.54)
+          (name "BP" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+        (pin power_out line (at 7.62 2.54 180) (length 2.54)
+          (name "OUT" (effects (font (size 1.27 1.27))))
+          (number "5" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -1600,124 +1493,6 @@
         (rectangle (start -5.08 7.62) (end 5.08 -2.54)
           (stroke (width 0.254) (type default))
           (fill (type background))
-        )
-      )
-    )
-    (symbol "Switch:SW_Push_Dual" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "SW" (at 1.27 2.54 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "SW_Push_Dual" (at 0 -6.858 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 5.08 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 5.08 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "switch normally-open pushbutton push-button" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Push button switch, generic, symbol, four pins" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "SW_Push_Dual_0_1"
-        (circle (center -2.032 -5.08) (radius 0.508)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (circle (center -2.032 0) (radius 0.508)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -3.048)
-            (xy 0 -3.556)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -2.032)
-            (xy 0 -2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -1.524)
-            (xy 0 -1.016)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -0.508)
-            (xy 0 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0.508)
-            (xy 0 1.016)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 1.27)
-            (xy 0 3.048)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 2.54 -3.81)
-            (xy -2.54 -3.81)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 2.54 1.27)
-            (xy -2.54 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (circle (center 2.032 -5.08) (radius 0.508)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (circle (center 2.032 0) (radius 0.508)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (pin passive line (at -5.08 0 0) (length 2.54)
-          (name "1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 5.08 0 180) (length 2.54)
-          (name "2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 -5.08 0) (length 2.54)
-          (name "3" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 5.08 -5.08 180) (length 2.54)
-          (name "4" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -1919,11 +1694,11 @@
     )
   )
 
+  (junction (at 52.07 179.07) (diameter 0) (color 0 0 0 0)
+    (uuid 33fe2566-2572-4494-9c24-7a985796bf4e)
+  )
   (junction (at 148.59 30.48) (diameter 0) (color 0 0 0 0)
     (uuid 44adaa9d-d0e0-41ae-8ac3-2e700ad4eb36)
-  )
-  (junction (at 55.88 124.46) (diameter 0) (color 0 0 0 0)
-    (uuid 4e213b4a-2b57-4075-8e93-f3b2689b487f)
   )
   (junction (at 97.79 179.07) (diameter 0) (color 0 0 0 0)
     (uuid 79cedb68-e6cc-4dad-a199-67bf3203ad07)
@@ -1936,9 +1711,6 @@
   )
   (junction (at 90.17 68.58) (diameter 0) (color 0 0 0 0)
     (uuid bcfa9b17-0261-47f2-b540-e2b758906153)
-  )
-  (junction (at 125.095 167.005) (diameter 0) (color 0 0 0 0)
-    (uuid bfb84ce4-94fa-4af7-8c35-5cc5f5f88266)
   )
   (junction (at 146.05 30.48) (diameter 0) (color 0 0 0 0)
     (uuid c214a19b-6dba-42a9-99ca-dd5f7cf6303d)
@@ -1958,19 +1730,17 @@
 
   (no_connect (at 166.37 66.04) (uuid 017faca0-91dc-41e0-b67c-496399c27337))
   (no_connect (at 166.37 88.9) (uuid 0c9b832e-9aff-46e7-9562-6db9bd069ed0))
-  (no_connect (at 50.8 148.59) (uuid 17917c10-da1f-475a-b028-644f1a792522))
+  (no_connect (at 40.64 133.35) (uuid 17917c10-da1f-475a-b028-644f1a792522))
   (no_connect (at 166.37 91.44) (uuid 2ddef6f6-a72d-4c1f-9be4-cfddfa79c9f7))
   (no_connect (at 166.37 111.76) (uuid 30881866-8845-48a9-8f83-a16180c5dfe6))
   (no_connect (at 166.37 81.28) (uuid 379f5d42-f883-48d9-8b01-a109a88faf36))
   (no_connect (at 166.37 114.3) (uuid 48d04968-0847-4764-a0f2-ab356d8a8c31))
   (no_connect (at 166.37 99.06) (uuid 565dc7bb-46ff-47e7-ac30-18442d4137e1))
   (no_connect (at 243.84 48.26) (uuid 67263f4f-c1d0-4a90-ba43-175f221f798a))
-  (no_connect (at 137.795 154.305) (uuid 6bc48d63-d5dc-49a9-80ff-1abe6ae8b0fa))
-  (no_connect (at 50.8 146.05) (uuid 723eaeb6-7b6a-4dea-a57a-56937805837c))
+  (no_connect (at 50.8 128.27) (uuid 723eaeb6-7b6a-4dea-a57a-56937805837c))
   (no_connect (at 243.84 50.8) (uuid 89e75c12-31a4-4d4f-9816-b680ea14440c))
   (no_connect (at 166.37 86.36) (uuid 8f4777a3-aae3-49d5-88cb-dfa65a1844bc))
   (no_connect (at 166.37 96.52) (uuid 9613ecc9-90ed-46b4-905c-ee143873ebc3))
-  (no_connect (at 137.795 156.845) (uuid 98a9da91-9024-4255-b0f8-2e4b6c123493))
   (no_connect (at 166.37 106.68) (uuid a2f2fade-e635-4c1b-9b00-7d6309446d7e))
   (no_connect (at 166.37 93.98) (uuid b5996ed4-e245-450e-8b84-1e6d78d7d46a))
   (no_connect (at 166.37 109.22) (uuid c7ac3e94-585d-4b85-9e19-cdb85c0789d0))
@@ -1983,25 +1753,17 @@
     (stroke (width 0) (type default))
     (uuid 02080dfe-349c-42ec-a69b-4188676774a5)
   )
-  (wire (pts (xy 55.88 124.46) (xy 55.88 123.19))
-    (stroke (width 0) (type default))
-    (uuid 09511145-bcd8-4334-9437-fa09545b6b5f)
-  )
-  (wire (pts (xy 50.8 135.89) (xy 50.8 138.43))
-    (stroke (width 0) (type default))
-    (uuid 11dd207a-8430-4f83-99dd-e8e6e36fd9e4)
-  )
   (wire (pts (xy 219.71 96.52) (xy 217.17 96.52))
     (stroke (width 0) (type default))
     (uuid 1381c8e7-7479-4bda-8b92-bd59727361d7)
   )
-  (wire (pts (xy 55.88 125.73) (xy 55.88 124.46))
-    (stroke (width 0) (type default))
-    (uuid 1418062c-e7d6-4f3a-8ba3-83484c34600c)
-  )
-  (wire (pts (xy 80.01 66.04) (xy 80.01 71.12))
+  (wire (pts (xy 74.93 66.04) (xy 74.93 71.12))
     (stroke (width 0) (type default))
     (uuid 343eae6c-a959-403c-96de-6aaedb323af3)
+  )
+  (wire (pts (xy 52.07 179.07) (xy 52.07 181.61))
+    (stroke (width 0) (type default))
+    (uuid 47223399-43f4-48d0-a2d0-ceb0e4c5c03a)
   )
   (wire (pts (xy 95.885 179.07) (xy 97.79 179.07))
     (stroke (width 0) (type default))
@@ -2031,10 +1793,6 @@
     (stroke (width 0) (type default))
     (uuid 7e06acea-09c4-4c95-a3e0-1c85bd445ea2)
   )
-  (wire (pts (xy 50.8 130.81) (xy 50.8 133.35))
-    (stroke (width 0) (type default))
-    (uuid 914d46d1-06a1-4663-8522-6de7a72b3a3b)
-  )
   (wire (pts (xy 143.51 30.48) (xy 146.05 30.48))
     (stroke (width 0) (type default))
     (uuid a8b4f584-22f4-430d-80ea-a687e64a9856)
@@ -2055,10 +1813,6 @@
     (stroke (width 0) (type default))
     (uuid c857c15b-4622-4692-8bd7-fafc60b5d9aa)
   )
-  (wire (pts (xy 122.555 167.005) (xy 125.095 167.005))
-    (stroke (width 0) (type default))
-    (uuid ca15150e-95ea-4578-96e1-24da2193952a)
-  )
   (wire (pts (xy 90.17 66.04) (xy 90.17 68.58))
     (stroke (width 0) (type default))
     (uuid cae2005f-f212-412b-baf9-793a6325173f)
@@ -2071,15 +1825,7 @@
     (stroke (width 0) (type default))
     (uuid f68e5e02-60f8-4189-87c5-632b29b16609)
   )
-  (wire (pts (xy 69.85 146.05) (xy 78.74 146.05))
-    (stroke (width 0) (type default))
-    (uuid f96642b0-a888-4b8e-b16b-c67313a4b945)
-  )
 
-  (text "USB protection" (at 38.1 158.75 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 03bdc120-786f-4d6e-a669-52ebb46c3dc9)
-  )
   (text "Alternative QSPI Flash with WSON footprint" (at 25.4 63.5 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 0b8be41c-a0d2-4ac2-a269-87ae470a7e32)
@@ -2091,10 +1837,6 @@
   (text "Status indication LEDs" (at 232.41 105.41 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 2f39810a-c114-4d37-b746-06ef06044fbd)
-  )
-  (text "MCU JTAG connector" (at 115.57 130.81 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 40c97609-3bad-49a1-a44f-2b146835bed0)
   )
   (text "Decoupling capacitors for 3.3V lines" (at 173.99 140.97 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -2124,7 +1866,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid a934d8a4-40e1-4ba2-a8d4-9b6fc607d9b6)
   )
-  (text "MCU UART connector" (at 117.475 178.435 0)
+  (text "MCU UART and Debug connector" (at 121.92 166.37 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid b0dff09b-0e44-436f-9d43-0aad7f693443)
   )
@@ -2194,13 +1936,6 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "VBUS" (shape input) (at 85.09 111.76 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 116aacdb-899e-4e44-af39-b511e9d3b60b)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 92.9738 111.76 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
   (global_label "TARGET_TX" (shape input) (at 204.47 33.02 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 14782651-a64a-408f-be0c-a5cd4bbedb5a)
@@ -2227,13 +1962,6 @@
     (uuid 1d6aba5b-cc1f-457d-9860-639c3816e38e)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 27.3928 38.1 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "USB_DP" (shape input) (at 72.39 124.46 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 1e141845-53ac-49a6-8f33-dc1d46d2f0e8)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 72.39 114.1572 90)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
   (global_label "VUSB" (shape input) (at 55.88 118.11 0) (fields_autoplaced)
@@ -2271,10 +1999,10 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "HOST_TX" (shape input) (at 130.81 183.515 0) (fields_autoplaced)
+  (global_label "HOST_TX" (shape input) (at 137.16 171.45 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 38908d44-f14d-43f9-a850-3baba4e475b8)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 141.778 183.515 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 148.128 171.45 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2283,13 +2011,6 @@
     (uuid 38fb568e-d0ff-4ebe-acdb-6fcc8c1bf994)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 103.5928 60.96 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "SHIELD" (shape input) (at 85.09 137.16 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 3c8501e8-a61d-4131-9688-78e3666579e1)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 94.6671 137.16 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
   (global_label "QSPI_SS" (shape input) (at 39.37 33.02 180) (fields_autoplaced)
@@ -2327,10 +2048,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "USB_DN" (shape input) (at 50.8 132.08 0) (fields_autoplaced)
+  (global_label "USB_DN" (shape input) (at 50.8 125.73 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 482018db-67de-4c67-adc8-0c3df41df0f8)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 61.0839 132.08 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 61.0839 125.73 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2355,17 +2076,17 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "QSPI_SS" (shape input) (at 80.01 68.58 180) (fields_autoplaced)
+  (global_label "QSPI_SS" (shape input) (at 74.93 68.58 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 574c538f-0c3a-4d57-ac95-da69de13eea9)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 69.3028 68.58 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 64.2228 68.58 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "HOST_RESET" (shape input) (at 137.795 144.145 0) (fields_autoplaced)
+  (global_label "HOST_RESET" (shape input) (at 137.16 179.07 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 5d9b4c06-de79-48c5-b1db-38d15a22fcbd)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 152.331 144.145 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 151.696 179.07 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2390,17 +2111,17 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "USB_DP" (shape input) (at 50.8 137.16 0) (fields_autoplaced)
+  (global_label "USB_DP" (shape input) (at 50.8 123.19 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 64cf2624-cb88-4a5c-938a-f0e851f516c4)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 61.0234 137.16 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 61.0234 123.19 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "TARGET_3V3" (shape input) (at 258.445 97.79 180) (fields_autoplaced)
+  (global_label "TARGET_3V3" (shape input) (at 252.73 97.79 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 66da6622-5259-40b9-98f9-5c7bdc99800e)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 244.2718 97.79 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 238.5568 97.79 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -2411,10 +2132,10 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "HOST_DIO" (shape input) (at 137.795 151.765 0) (fields_autoplaced)
+  (global_label "HOST_DIO" (shape input) (at 137.16 184.15 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 6ad283eb-4447-4da4-a869-7f298763f04d)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 149.7912 151.765 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 149.1562 184.15 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2509,13 +2230,6 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "USB_DN" (shape input) (at 97.79 124.46 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 869377b0-4f00-49c0-9be0-9b24c7c6a872)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 97.79 114.0967 90)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
   (global_label "XOUT" (shape input) (at 74.93 91.44 90) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 881427a6-bfa8-4d05-b9c3-22a792b243cf)
@@ -2544,10 +2258,10 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "HOST_CLK" (shape input) (at 137.795 149.225 0) (fields_autoplaced)
+  (global_label "HOST_CLK" (shape input) (at 137.16 181.61 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 92121d56-4fc5-4f60-9671-8f587affa595)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 150.154 149.225 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 149.519 181.61 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2565,10 +2279,10 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "HOST_RX" (shape input) (at 130.81 188.595 0) (fields_autoplaced)
+  (global_label "HOST_RX" (shape input) (at 137.16 176.53 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid a191af10-7ee4-4feb-ae54-ed7719375c59)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 142.0804 188.595 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 148.4304 176.53 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2576,13 +2290,6 @@
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid a4803e9c-6ab5-4085-bbd3-53d24997746e)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 27.3928 40.64 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "SHIELD" (shape input) (at 27.94 156.21 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid a7be4fe6-0425-449a-9447-36e3f11f2ca6)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 27.94 165.7871 90)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -2661,13 +2368,6 @@
     (uuid d0f5c2f5-c2a7-4298-822d-0f12766b09a3)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 245.2999 74.295 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "SHIELD" (shape input) (at 74.93 146.05 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid d115f8cf-a935-436d-a71f-0f6503585441)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 74.93 136.4729 90)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
   (global_label "QSPI_SCLK" (shape input) (at 115.57 71.12 180) (fields_autoplaced)
@@ -2825,34 +2525,6 @@
     )
   )
 
-  (symbol (lib_id "Power_Protection:PRTR5V0U2X") (at 85.09 124.46 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00f86d6a-c5a3-4dfb-8f64-2789a59d289e)
-    (property "Reference" "D3" (at 100.33 125.73 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "PRTR5V0U2X" (at 100.33 128.27 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-143" (at 86.614 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PRTR5V0U2X.pdf" (at 86.614 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e31ec1c3-579d-47a4-9d00-63a7867c0e5b))
-    (pin "2" (uuid 9722aa4e-7d08-4c77-a458-6637fa21b9c7))
-    (pin "3" (uuid a6fe7bef-3c8d-4987-80dd-1c72e1afcac0))
-    (pin "4" (uuid a7349c7b-8b68-49d8-a8a8-cfd8d487b64b))
-    (instances
-      (project "RP2040-DebugProbe"
-        (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
-          (reference "D3") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:+1V1") (at 261.62 148.59 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 06608cc6-00c0-4615-a004-213469041efd)
@@ -2870,7 +2542,7 @@
     )
     (pin "1" (uuid 4cccee50-8701-4abb-ada1-9c120ff73da8))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR027") (unit 1)
         )
@@ -2896,7 +2568,7 @@
     (pin "1" (uuid 1cd7d181-f93b-43dd-9917-1e7d42b95d71))
     (pin "2" (uuid 45dcde5d-8186-4320-843b-30f558a0735c))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "R8") (unit 1)
         )
@@ -2921,7 +2593,7 @@
     )
     (pin "1" (uuid 8ecd4cdf-f568-4db8-9804-80196441455b))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR047") (unit 1)
         )
@@ -2946,7 +2618,7 @@
     )
     (pin "1" (uuid 0bcc6e29-1de9-4903-a55d-aadc5cca170a))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR031") (unit 1)
         )
@@ -2972,7 +2644,7 @@
     (pin "1" (uuid 4e8cd18d-6bc5-48aa-b283-6a53849fb62c))
     (pin "2" (uuid edca483f-febf-4d54-ad49-3c8445df8e1e))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "R20") (unit 1)
         )
@@ -2998,7 +2670,7 @@
     (pin "1" (uuid 18891d9a-f562-4796-b0e8-23b5539fae3e))
     (pin "2" (uuid cb0db161-085d-4afb-bdec-8c7c2c6ccf27))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "R13") (unit 1)
         )
@@ -3024,7 +2696,7 @@
     (pin "1" (uuid 2e0a878d-1f8a-4422-985e-639ada85fd2e))
     (pin "2" (uuid 135c41ba-c796-43d3-af9d-12aa7bea58fc))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "C2") (unit 1)
         )
@@ -3049,7 +2721,7 @@
     )
     (pin "1" (uuid 92d815b5-a211-4927-86c4-b207993f3d57))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR057") (unit 1)
         )
@@ -3075,7 +2747,7 @@
     (pin "1" (uuid 19299eb7-ec4b-45a6-b3f8-add492f82423))
     (pin "2" (uuid d5f397e2-feff-4a73-8fbe-6b70ddfc6c4b))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "C13") (unit 1)
         )
@@ -3101,7 +2773,7 @@
     (pin "1" (uuid 29c5ee89-b78c-4453-892d-3ef12e6e12fd))
     (pin "2" (uuid aaff604e-21e4-4926-afc1-7ce09eb9c0b7))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "C6") (unit 1)
         )
@@ -3109,24 +2781,54 @@
     )
   )
 
-  (symbol (lib_id "power:+3V3") (at 258.445 95.25 0) (mirror y) (unit 1)
+  (symbol (lib_id "Connector:USB_B_Micro") (at 43.18 123.19 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 17a0d504-c1f7-4248-bedd-d8c455ccf949)
-    (property "Reference" "#PWR056" (at 258.445 99.06 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3V3" (at 258.445 91.44 0)
+    (uuid 17732c83-6297-4d25-96e2-2ad2db740e6c)
+    (property "Reference" "J5" (at 43.18 110.49 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 258.445 95.25 0)
+    (property "Value" "USB_B_Micro" (at 43.18 113.03 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_USB:USB_Micro-B_Molex_47346-0001" (at 46.99 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 258.445 95.25 0)
+    (property "Datasheet" "~" (at 46.99 124.46 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "2" (uuid 14c90e87-9f61-4dee-a7cc-ba527ab9e7c5))
+    (pin "4" (uuid b2ab260c-233a-493b-b627-5c34d4879779))
+    (pin "1" (uuid 3e7554f8-8ddc-4a21-b0cd-3861584cbe2b))
+    (pin "5" (uuid dc643cfb-2220-449d-a66f-aa821b03979a))
+    (pin "3" (uuid 04fb62d7-e607-4f45-9863-7a58d6f241c2))
+    (pin "6" (uuid cbeb1f33-58f6-4c60-b41b-416706efeb1f))
+    (instances
+      (project "RP2040-MicroProbe"
+        (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
+          (reference "J5") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+3V3") (at 260.35 97.79 270) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 17a0d504-c1f7-4248-bedd-d8c455ccf949)
+    (property "Reference" "#PWR056" (at 256.54 97.79 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3V3" (at 264.16 97.79 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 260.35 97.79 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 260.35 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 9fc0475c-6672-44f3-8439-edecda73f50f))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR056") (unit 1)
         )
@@ -3151,7 +2853,7 @@
     )
     (pin "1" (uuid 323dc137-d49e-4e90-b634-bf4d15e174c0))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR09") (unit 1)
         )
@@ -3176,7 +2878,7 @@
     )
     (pin "1" (uuid 22a0a89d-caf9-4592-9480-3f97d7685e4e))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR070") (unit 1)
         )
@@ -3202,7 +2904,7 @@
     (pin "1" (uuid 3e22f2e5-eb1e-450b-830b-58767b9dc9c1))
     (pin "2" (uuid afdfc65c-f0b6-4b23-93db-d052e2124a13))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "D1") (unit 1)
         )
@@ -3227,7 +2929,7 @@
     )
     (pin "1" (uuid 83b43104-8442-4e4f-a25a-ee3b83b26dbb))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR049") (unit 1)
         )
@@ -3252,7 +2954,7 @@
     )
     (pin "1" (uuid 4c6e4880-f861-4030-a812-d34e867b667b))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR068") (unit 1)
         )
@@ -3260,27 +2962,31 @@
     )
   )
 
-  (symbol (lib_id "Device:C_Small") (at 78.74 148.59 0) (unit 1)
+  (symbol (lib_id "Connector_Generic:Conn_01x06") (at 132.08 176.53 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
-    (uuid 1ccba94d-0920-4984-b724-17e1f8c808d3)
-    (property "Reference" "C21" (at 81.28 147.32 0)
+    (uuid 1cf51770-828c-49e1-a3b7-8850f0c4318e)
+    (property "Reference" "J1" (at 129.54 176.53 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "4.7nF 1kV" (at 81.28 149.86 0)
+    (property "Value" "CONN_MCU_DEBUG" (at 129.54 179.07 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 78.74 148.59 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" (at 132.08 176.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 78.74 148.59 0)
+    (property "Datasheet" "~" (at 132.08 176.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0eff1136-e81d-4047-8d6c-70ecabe6ca7d))
-    (pin "2" (uuid 65d8260a-fb64-4d46-a665-a9c910702452))
+    (pin "2" (uuid 4a7cd37c-2fe5-430e-a2f3-36525859e702))
+    (pin "4" (uuid ff3b9119-ba89-4015-9f30-a002d74d219a))
+    (pin "3" (uuid 3065276a-f4b1-4a3e-be06-58b97ba8d6d1))
+    (pin "1" (uuid df24474c-06a3-4819-a2ab-f167737d3ad5))
+    (pin "5" (uuid bf01c872-bfb2-4fa2-80bd-3ed7086451a6))
+    (pin "6" (uuid 85832645-49f5-4729-9314-43b501dc3d89))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
-          (reference "C21") (unit 1)
+          (reference "J1") (unit 1)
         )
       )
     )
@@ -3303,7 +3009,7 @@
     )
     (pin "1" (uuid ab781759-39e2-4907-866e-8e9005994274))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR023") (unit 1)
         )
@@ -3336,7 +3042,7 @@
     (pin "8" (uuid c93c74dd-ac61-4a50-8300-7ecad50b47f3))
     (pin "9" (uuid e35e3e38-87a5-4cf4-97a0-c41b9de034e2))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "U4") (unit 1)
         )
@@ -3361,7 +3067,7 @@
     )
     (pin "1" (uuid 0e57f7f1-2451-4c5c-86d3-4160e4a4330c))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR037") (unit 1)
         )
@@ -3387,7 +3093,7 @@
     (pin "1" (uuid 2ab46e45-3154-4c2c-9783-b812701d2c2f))
     (pin "2" (uuid a21a10c2-ca28-42d9-ac49-f799bcc09840))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "R21") (unit 1)
         )
@@ -3412,34 +3118,9 @@
     )
     (pin "1" (uuid 22f2a874-d0a2-48bd-b0ee-53d3bef757ea))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR02") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 125.095 167.005 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 244e74ec-5b69-465b-964e-16cf7e708e31)
-    (property "Reference" "#PWR040" (at 125.095 173.355 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 125.095 170.815 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 125.095 167.005 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 125.095 167.005 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b5eeb1c0-2e0f-49d0-a001-3514248cc396))
-    (instances
-      (project "RP2040-DebugProbe"
-        (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
-          (reference "#PWR040") (unit 1)
         )
       )
     )
@@ -3462,7 +3143,7 @@
     )
     (pin "1" (uuid e503eef6-c00f-4137-8bf4-6670a874720c))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR05") (unit 1)
         )
@@ -3488,7 +3169,7 @@
     (pin "1" (uuid 62c98e4f-a599-4b38-acee-f5b03cda9a0b))
     (pin "2" (uuid b283ee60-6258-4aa8-8ee7-0dd64f708baa))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "R9") (unit 1)
         )
@@ -3513,7 +3194,7 @@
     )
     (pin "1" (uuid 89d52bcf-e8d5-495e-8690-a68d807478aa))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR011") (unit 1)
         )
@@ -3539,7 +3220,7 @@
     (pin "1" (uuid 3600aaf8-4d6b-403d-b97e-67eea19d9d6a))
     (pin "2" (uuid b4148119-5851-4d23-ba97-e92c18be940c))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "C20") (unit 1)
         )
@@ -3567,7 +3248,7 @@
     (pin "3" (uuid 53c6c4b0-1e6d-4955-b9da-2ad921f43c64))
     (pin "4" (uuid a2c13985-bc22-481a-971e-3cb1aad9e220))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "Y1") (unit 1)
         )
@@ -3592,7 +3273,7 @@
     )
     (pin "1" (uuid bbffff91-c265-444f-99ba-482387a2843a))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR043") (unit 1)
         )
@@ -3618,7 +3299,7 @@
     (pin "1" (uuid 7f745cfa-3a88-4b8f-bb09-08df37eac1e1))
     (pin "2" (uuid eb09aab9-9554-4954-af8c-32f6bb10d10f))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "C11") (unit 1)
         )
@@ -3643,7 +3324,7 @@
     )
     (pin "1" (uuid 19885540-1999-4a41-a97b-a7d6e9d48b32))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR020") (unit 1)
         )
@@ -3668,7 +3349,7 @@
     )
     (pin "1" (uuid d51e29ee-031f-4410-8882-b8d00e9a04a9))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR072") (unit 1)
         )
@@ -3693,7 +3374,7 @@
     )
     (pin "1" (uuid e9627e48-4145-4d70-8a75-19bb87d60815))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR035") (unit 1)
         )
@@ -3719,7 +3400,7 @@
     (pin "1" (uuid bf1edcd9-cf85-4f3e-87cc-758c9c1fea41))
     (pin "2" (uuid d358e9a6-b322-4b70-91fd-d2db70fef7f7))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "D5") (unit 1)
         )
@@ -3744,7 +3425,7 @@
     )
     (pin "1" (uuid 752dcca8-29ac-4604-91d4-0ed79e60dd82))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR016") (unit 1)
         )
@@ -3769,7 +3450,7 @@
     )
     (pin "1" (uuid c7f78581-aa9c-49e4-aabb-0c07e51e77b1))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR019") (unit 1)
         )
@@ -3794,7 +3475,7 @@
     )
     (pin "1" (uuid c389770f-01c8-4cef-8a5f-34c145e888cc))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR059") (unit 1)
         )
@@ -3819,7 +3500,7 @@
     )
     (pin "1" (uuid df84cdf9-c175-48e4-8cb4-3f267bbfed87))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR04") (unit 1)
         )
@@ -3844,7 +3525,7 @@
     )
     (pin "1" (uuid 190b3139-b042-465f-8b12-74e6bb482b1d))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR055") (unit 1)
         )
@@ -3870,7 +3551,7 @@
     (pin "1" (uuid 35202859-76eb-4432-91c5-a17ffe1f611a))
     (pin "2" (uuid 2678af29-bee0-4c9f-9763-8ecb5fb6e7fe))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "R19") (unit 1)
         )
@@ -3878,24 +3559,24 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 35.56 156.21 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 43.18 133.35 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3e64cbea-5722-4958-a243-e38fbd4d6053)
-    (property "Reference" "#PWR044" (at 35.56 162.56 0)
+    (property "Reference" "#PWR044" (at 43.18 139.7 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 35.56 160.02 0)
+    (property "Value" "GND" (at 43.18 137.16 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 35.56 156.21 0)
+    (property "Footprint" "" (at 43.18 133.35 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 35.56 156.21 0)
+    (property "Datasheet" "" (at 43.18 133.35 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 574fe26a-b225-4e0e-baee-30c9b94e936d))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR044") (unit 1)
         )
@@ -3921,7 +3602,7 @@
     (pin "1" (uuid e06ec7df-916b-4043-b6a0-2cbed68dd1be))
     (pin "2" (uuid 98de3098-8507-46aa-a593-c0d739621798))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "R4") (unit 1)
         )
@@ -3946,7 +3627,7 @@
     )
     (pin "1" (uuid a8eb0074-bb45-48a0-a006-44886b527482))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR071") (unit 1)
         )
@@ -3971,7 +3652,7 @@
     )
     (pin "1" (uuid 7e5ddc90-b7e6-44d6-807d-b7981b561157))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR073") (unit 1)
         )
@@ -3997,7 +3678,7 @@
     (pin "1" (uuid 41af3e28-bf1b-46fa-bce4-f0b5cedf05cb))
     (pin "2" (uuid 2d5f1857-eb7f-498d-b4e6-1253ea5248ba))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "D6") (unit 1)
         )
@@ -4022,7 +3703,7 @@
     )
     (pin "1" (uuid 0624fa46-fb6e-4d62-9424-7479968a0b4e))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR032") (unit 1)
         )
@@ -4048,7 +3729,7 @@
     (pin "1" (uuid 23920f5e-69db-476f-bf07-52ad7685abdc))
     (pin "2" (uuid 2680b25b-79ac-474e-9416-61dd102b9cbd))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "R1") (unit 1)
         )
@@ -4073,50 +3754,9 @@
     )
     (pin "1" (uuid fba3c8e9-283c-4987-8cbc-44a66d2dae18))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR042") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:USB_C_Receptacle_USB2.0") (at 35.56 133.35 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 4c9da841-c8e5-40fe-8387-28d319fa51e3)
-    (property "Reference" "J10" (at 35.56 110.49 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "CONN_USB" (at 35.56 113.03 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" (at 39.37 133.35 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" (at 39.37 133.35 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "A1" (uuid faa07363-d59f-4c57-a76d-d80cf37286f9))
-    (pin "A12" (uuid 75744f43-27c2-40aa-b54e-bd56dc6fb30a))
-    (pin "A4" (uuid e547cc25-c5c8-4d99-b657-5034d56102ff))
-    (pin "A5" (uuid be33c580-9386-4be2-a4d7-2eebc62d63b8))
-    (pin "A6" (uuid aa3bb194-7148-445b-b23b-0ca630e79619))
-    (pin "A7" (uuid 00ed55bf-9c37-4c5e-81d9-2e5f059b94b5))
-    (pin "A8" (uuid c1d06e6c-12d3-42da-9708-05fb46b1157b))
-    (pin "A9" (uuid 0d687ec9-f5f8-44bb-a469-88a92baaa0fa))
-    (pin "B1" (uuid ffa45be2-ccbd-40c8-9609-95089180cbf4))
-    (pin "B12" (uuid aad9632d-03bd-4538-944f-01149d76cb7b))
-    (pin "B4" (uuid afe18c98-3b18-4dc7-90c7-967e122518d7))
-    (pin "B5" (uuid 292b58e1-9dae-46fb-ae11-1037b6d0e277))
-    (pin "B6" (uuid 5b6ee666-4e0b-4aca-acb7-08975b8c68c6))
-    (pin "B7" (uuid 7ce0fc46-7307-4f72-8749-cb8811725d83))
-    (pin "B8" (uuid 295bd6c5-fc4f-4673-bcde-a3797a443987))
-    (pin "B9" (uuid 9703341b-b9ce-4a6c-aab9-46883e7876c4))
-    (pin "S1" (uuid 9f2d8383-0ca2-41d5-ada2-cd6c9f03377e))
-    (instances
-      (project "RP2040-DebugProbe"
-        (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
-          (reference "J10") (unit 1)
         )
       )
     )
@@ -4140,7 +3780,7 @@
     (pin "1" (uuid 74a32791-6a8f-499e-9b7a-6b03cb8c207a))
     (pin "2" (uuid b2189697-3414-4c4e-b57d-3e0c02f20107))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "R3") (unit 1)
         )
@@ -4166,7 +3806,7 @@
     (pin "1" (uuid 24749696-f674-4f40-8e4c-c99bdb9aaf0d))
     (pin "2" (uuid 3eba8bef-bdf7-4852-9a2a-a7b145dd17e2))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "C18") (unit 1)
         )
@@ -4192,7 +3832,7 @@
     (pin "1" (uuid 61d275ae-fb86-4c76-a3ed-62783c081372))
     (pin "2" (uuid bd3d169b-3dfc-4520-8781-2dc47f028598))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "R2") (unit 1)
         )
@@ -4218,7 +3858,7 @@
     (pin "1" (uuid cd03149a-200e-40ca-ac06-e9cd58b60bcd))
     (pin "2" (uuid fc56946a-fc92-41a7-b1e9-34f365bdf9f8))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "R22") (unit 1)
         )
@@ -4243,35 +3883,9 @@
     )
     (pin "1" (uuid 1c9b1bb1-8f56-46db-bb94-a22e78e04766))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR046") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 69.85 148.59 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 52d80e2f-55e1-4f1f-926f-b1b767e4dfdf)
-    (property "Reference" "R12" (at 72.39 147.32 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "1M" (at 72.39 149.86 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 69.85 148.59 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 69.85 148.59 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid fbda07db-4cfc-44ee-b31e-9329d7142659))
-    (pin "2" (uuid 41cb7037-59c2-4bd0-814b-82180baa62f3))
-    (instances
-      (project "RP2040-DebugProbe"
-        (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
-          (reference "R12") (unit 1)
         )
       )
     )
@@ -4301,7 +3915,7 @@
     (pin "7" (uuid 48bfeed6-a8a7-420b-b73d-b24f93f6888f))
     (pin "8" (uuid 366f5a27-09a2-4c14-9d4c-454ad155cc24))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "J3") (unit 1)
         )
@@ -4327,7 +3941,7 @@
     (pin "1" (uuid 09818918-9acd-4833-bc60-210ddcc1c45b))
     (pin "2" (uuid 8eafc253-556a-479b-a3ef-154961deda06))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "R23") (unit 1)
         )
@@ -4352,7 +3966,7 @@
     )
     (pin "1" (uuid a32fab52-2f65-4cb2-8417-e8251d2b629c))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR07") (unit 1)
         )
@@ -4377,7 +3991,7 @@
     )
     (pin "1" (uuid b1c519c7-5aca-4bbb-a69a-8aafbcb90644))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR066") (unit 1)
         )
@@ -4385,24 +3999,24 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 59.69 186.69 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 59.69 189.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 594052c2-3853-484e-95c7-895197e23f63)
-    (property "Reference" "#PWR050" (at 59.69 193.04 0)
+    (property "Reference" "#PWR050" (at 59.69 195.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 59.69 190.5 0)
+    (property "Value" "GND" (at 59.69 193.04 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 59.69 186.69 0)
+    (property "Footprint" "" (at 59.69 189.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 59.69 186.69 0)
+    (property "Datasheet" "" (at 59.69 189.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid fd38dca3-3b8f-4bb4-9f29-d0852d123c6f))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR050") (unit 1)
         )
@@ -4427,7 +4041,7 @@
     )
     (pin "1" (uuid 17c99981-e41b-4cb0-abbb-633054d6296a))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR024") (unit 1)
         )
@@ -4453,7 +4067,7 @@
     (pin "1" (uuid f0160194-baba-4398-8cc8-f861ab6a6625))
     (pin "2" (uuid 36895bb2-0a06-423c-92a0-902907e897bc))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "R17") (unit 1)
         )
@@ -4479,7 +4093,7 @@
     (pin "1" (uuid 3e3af103-6f38-4c7a-aec4-22bcb220d60d))
     (pin "2" (uuid b6801204-38c9-47cb-b3cf-c90e6af34b07))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "C3") (unit 1)
         )
@@ -4504,7 +4118,7 @@
     )
     (pin "1" (uuid 59705875-ebb6-48ad-8d11-8027cd8df873))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR033") (unit 1)
         )
@@ -4529,7 +4143,7 @@
     )
     (pin "1" (uuid e8ae36c4-a414-4fdd-91f7-4c3b1c4aa4cd))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR026") (unit 1)
         )
@@ -4554,7 +4168,7 @@
     )
     (pin "1" (uuid abcda061-b63c-4d06-92af-f5a92860ff47))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR010") (unit 1)
         )
@@ -4580,7 +4194,7 @@
     (pin "1" (uuid ae5f2504-c1e6-48a1-bc31-b3be8e209990))
     (pin "2" (uuid fc6c898c-e6c0-4255-a76e-93585ee5d17d))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "C4") (unit 1)
         )
@@ -4605,9 +4219,35 @@
     )
     (pin "1" (uuid f5aee093-f3b6-4311-a8bd-f8b77cea0266))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR022") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Jumper:SolderJumper_2_Open") (at 256.54 97.79 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 61703ead-95d2-4e91-92ea-5d04caa010a0)
+    (property "Reference" "JP1" (at 256.54 91.44 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SJ_JTAG_3V3" (at 256.54 93.98 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" (at 256.54 97.79 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 256.54 97.79 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "2" (uuid 884a8758-7853-4219-881d-608f810ffea7))
+    (pin "1" (uuid 3a6e5d2d-8034-4e3e-88ae-a9321936bbbe))
+    (instances
+      (project "RP2040-MicroProbe"
+        (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
+          (reference "JP1") (unit 1)
         )
       )
     )
@@ -4630,7 +4270,7 @@
     )
     (pin "1" (uuid 4ec1c681-a078-4a19-a402-93401b724bf4))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR036") (unit 1)
         )
@@ -4656,7 +4296,7 @@
     (pin "1" (uuid d67e497c-0ae1-463f-a3b5-dc5cafc87086))
     (pin "2" (uuid 3187704f-aa74-4af6-a2b6-9ff489865deb))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "C17") (unit 1)
         )
@@ -4681,7 +4321,7 @@
     )
     (pin "1" (uuid 8f7d9211-1a40-4cc2-8f39-81279318c46c))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR017") (unit 1)
         )
@@ -4706,7 +4346,7 @@
     )
     (pin "1" (uuid 91194c93-09cf-4235-a3f2-a2a377332708))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR045") (unit 1)
         )
@@ -4732,7 +4372,7 @@
     (pin "1" (uuid 9140cecc-e9b6-46c6-ba2a-1700b39f3f94))
     (pin "2" (uuid ec53f5fe-b2e7-411e-b8af-7364804593aa))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "D4") (unit 1)
         )
@@ -4758,9 +4398,38 @@
     (pin "1" (uuid 596da832-d4f1-4789-9f39-7ec1c50b211d))
     (pin "2" (uuid 82a73dbb-6fa2-488d-be41-9f3a6b5b49e6))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "C16") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Regulator_Linear:MIC5205-3.3YM5") (at 59.69 181.61 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 72219207-08a2-43e5-a4f8-be6e69f5ca24)
+    (property "Reference" "U5" (at 59.69 172.72 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "MIC5205-3.3YM5" (at 59.69 175.26 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (at 59.69 173.355 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/20005785A.pdf" (at 59.69 181.61 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "5" (uuid 04828247-5eee-4dfa-97d8-0d0e35b876fc))
+    (pin "4" (uuid a1f8310d-594e-438d-a1c0-1b9299b65ad7))
+    (pin "3" (uuid 9a4940a0-ea78-42c9-a678-84ad52d72e7c))
+    (pin "2" (uuid 094b135c-e18f-4058-93c6-e9c1c287a1ef))
+    (pin "1" (uuid 01a17d7a-6558-4abf-b321-0b97ac8871d1))
+    (instances
+      (project "RP2040-MicroProbe"
+        (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
+          (reference "U5") (unit 1)
         )
       )
     )
@@ -4783,7 +4452,7 @@
     )
     (pin "1" (uuid 26b6285e-bd47-4493-89d1-6396737c7b70))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR012") (unit 1)
         )
@@ -4808,7 +4477,7 @@
     )
     (pin "1" (uuid 35b67a95-07f4-4a41-b29a-85292297df72))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR030") (unit 1)
         )
@@ -4833,7 +4502,7 @@
     )
     (pin "1" (uuid a3746635-9697-4a59-bbfc-9d2d175fdc19))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR013") (unit 1)
         )
@@ -4858,7 +4527,7 @@
     )
     (pin "1" (uuid 047d07c8-b5e4-45c7-8926-19dbae1cd7ae))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR060") (unit 1)
         )
@@ -4883,7 +4552,7 @@
     )
     (pin "1" (uuid 29f34792-e511-4a92-902c-d3110b30f182))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR015") (unit 1)
         )
@@ -4938,7 +4607,7 @@
     (pin "5" (uuid 7ba04d0f-e02a-4b5a-ba60-5f3e09f3e4f9))
     (pin "4" (uuid ce1cf6e7-403a-4daa-97ab-2650fa7c89c9))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "U6") (unit 1)
         )
@@ -4993,60 +4662,9 @@
     (pin "5" (uuid aea97fd0-d443-44b6-929c-b9b9231641f9))
     (pin "4" (uuid 680770ca-de48-47e3-af0d-9fcdf3b31692))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "U3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 53.34 123.19 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 7f3ca390-f11c-4600-ba35-7e0d5b1d5955)
-    (property "Reference" "R10" (at 48.26 120.65 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "5k1" (at 53.34 120.65 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 53.34 123.19 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 53.34 123.19 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a398212b-7bb8-40d8-a9b4-b4694a376173))
-    (pin "2" (uuid 0473be12-f09c-4030-b932-8a61f6216852))
-    (instances
-      (project "RP2040-DebugProbe"
-        (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
-          (reference "R10") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 55.88 124.46 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 80408f69-5070-432e-be79-2d071beb75d2)
-    (property "Reference" "#PWR067" (at 62.23 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 59.69 124.46 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 55.88 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 55.88 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 8ca13f43-4278-4be9-a86e-1c6be637dbca))
-    (instances
-      (project "RP2040-DebugProbe"
-        (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
-          (reference "#PWR067") (unit 1)
         )
       )
     )
@@ -5069,7 +4687,7 @@
     )
     (pin "1" (uuid ab52df88-c9a8-4ce2-8c4e-c02a2ba4ded1))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR041") (unit 1)
         )
@@ -5094,7 +4712,7 @@
     )
     (pin "1" (uuid 83be88a0-7b91-4ab4-9f65-f46bd14dcee2))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR064") (unit 1)
         )
@@ -5120,7 +4738,7 @@
     (pin "1" (uuid 3858c6a3-49f5-4a2e-b25f-e17d8a70f6ae))
     (pin "2" (uuid 9b80fc22-da6a-4612-a9a3-3a86c486a1a1))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "C12") (unit 1)
         )
@@ -5145,7 +4763,7 @@
     )
     (pin "1" (uuid e9b85692-e7d9-489a-babd-cdbd7dd3ea57))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR025") (unit 1)
         )
@@ -5171,7 +4789,7 @@
     (pin "1" (uuid 89d7d36e-4755-4aab-98a4-defd9bb782e5))
     (pin "2" (uuid bb642f97-5b3b-4ab4-bcb1-dc4cb74289da))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "FB2") (unit 1)
         )
@@ -5197,7 +4815,7 @@
     (pin "1" (uuid 0917de19-212b-401c-bffa-a6d33308a7bc))
     (pin "2" (uuid 94c2e115-7ee7-4dfd-a876-6c4d3a110b97))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "R18") (unit 1)
         )
@@ -5223,35 +4841,9 @@
     (pin "1" (uuid 2ed0b1d7-1717-4bea-82bb-354efee61b4b))
     (pin "2" (uuid 39447561-a1a9-4521-ac2d-f25ec70d139c))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "C8") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 53.34 125.73 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 97569655-fccd-4a43-b34b-2b46ad1aff10)
-    (property "Reference" "R11" (at 48.26 128.27 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "5k1" (at 53.34 128.27 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 53.34 125.73 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 53.34 125.73 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f0f96eb7-a75e-4c73-a8e8-a2904612ca5b))
-    (pin "2" (uuid f3903134-83e4-43e2-ad01-471b8e5a2021))
-    (instances
-      (project "RP2040-DebugProbe"
-        (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
-          (reference "R11") (unit 1)
         )
       )
     )
@@ -5283,7 +4875,7 @@
     (pin "8" (uuid cb5cade7-25d2-4ec6-9f62-943c87cbff45))
     (pin "9" (uuid 9a3bdff1-bada-4f25-82b7-a1158229f206))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "J7") (unit 1)
         )
@@ -5308,35 +4900,9 @@
     )
     (pin "1" (uuid e4812415-0902-480a-8059-63b69938dc66))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR065") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector_Generic:Conn_01x02") (at 263.525 95.25 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 9b327830-9c2e-40c5-89d2-5ef663e92c90)
-    (property "Reference" "J4" (at 266.7 95.25 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "CONN_3V3_JUMPER" (at 266.7 97.79 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (at 263.525 95.25 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 263.525 95.25 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 2357e8bb-5d29-4b65-b3ce-d7ccb3743878))
-    (pin "2" (uuid 5c2ac3d6-c8c4-40e0-850e-d4952b88373c))
-    (instances
-      (project "RP2040-DebugProbe"
-        (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
-          (reference "J4") (unit 1)
         )
       )
     )
@@ -5366,9 +4932,64 @@
     (pin "7" (uuid 4b18d5de-15ce-44fa-8436-68c971bc77c7))
     (pin "8" (uuid 8cdfad0e-bdcb-45d3-a561-3be93a585f22))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "U1") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "EVPBB0AAB000:EVPBB0AAB000") (at 82.55 68.58 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 9f9630a5-e456-452e-ac47-90f21d269c44)
+    (property "Reference" "S1" (at 82.55 60.96 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "BOOTSEL" (at 82.55 63.5 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "lib:SW_EVPBB0AAB000" (at 82.55 68.58 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Datasheet" "" (at 82.55 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ARROW_ELECTRONICS-PURCHASE-URL" "https://snapeda.com/shop?store=Arrow+Electronics&id=584571" (at 82.55 68.58 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MOUSER-PURCHASE-URL" "https://snapeda.com/shop?store=Mouser&id=584571" (at 82.55 68.58 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MAXIMUM_PACKAGE_HEIGHT" "0.58mm" (at 82.55 68.58 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "PACKAGE" "None" (at 82.55 68.58 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MF" "Panasonic Electronic" (at 82.55 68.58 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MP" "EVPBB0AAB000" (at 82.55 68.58 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "DIGIKEY-PURCHASE-URL" "https://snapeda.com/shop?store=DigiKey&id=584571" (at 82.55 68.58 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "DIGI-KEY_PART_NUMBER" "P19888CT-ND" (at 82.55 68.58 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "DESCRIPTION" "Tactile Switch SPST-NO Top Actuated Surface Mount" (at 82.55 68.58 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (pin "B2" (uuid ff2b4309-54aa-4dbc-9132-8874d8f94313))
+    (pin "A2" (uuid 9203ec47-2cf9-4d35-94ec-c5ed994760fb))
+    (pin "B1" (uuid 686ff3a7-3cae-45a3-8b39-cdab5b7655b1))
+    (pin "A1" (uuid c13313d1-b176-4237-91b5-e376504182d1))
+    (instances
+      (project "RP2040-MicroProbe"
+        (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
+          (reference "S1") (unit 1)
         )
       )
     )
@@ -5392,7 +5013,7 @@
     (pin "1" (uuid 93c976bc-4111-4337-b6cf-940230ae3f4a))
     (pin "2" (uuid 1b194530-2af9-49c9-8262-f45e1b414ab6))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "C7") (unit 1)
         )
@@ -5417,7 +5038,7 @@
     )
     (pin "1" (uuid 6c10d5eb-2c0e-4de6-b6b4-8e1ed4991c3d))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR03") (unit 1)
         )
@@ -5442,7 +5063,7 @@
     )
     (pin "1" (uuid 0e2a0f8a-b6b9-4698-9a0a-37087ddb8ead))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR048") (unit 1)
         )
@@ -5468,7 +5089,7 @@
     (pin "1" (uuid 057afc55-75b8-41aa-9ae0-fb2492e4192c))
     (pin "2" (uuid fe5f1343-ceb4-4ef7-87a2-09ef2aca16ae))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "D2") (unit 1)
         )
@@ -5493,34 +5114,9 @@
     )
     (pin "1" (uuid c07c357c-f954-4449-821e-32ffdf9c2535))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR061") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 69.85 151.13 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid a447f562-d2d2-4755-a623-5b83d792a9b4)
-    (property "Reference" "#PWR075" (at 69.85 157.48 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 69.85 154.94 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 69.85 151.13 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 69.85 151.13 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 70e469f3-3c7e-445c-a2c7-dfb174889f04))
-    (instances
-      (project "RP2040-DebugProbe"
-        (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
-          (reference "#PWR075") (unit 1)
         )
       )
     )
@@ -5544,7 +5140,7 @@
     (pin "1" (uuid c010120b-7ee0-48c4-b7cf-91cde66b3185))
     (pin "2" (uuid 8cb4cc52-f495-4888-92ac-95cd6b7219b4))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "C5") (unit 1)
         )
@@ -5570,34 +5166,9 @@
     (pin "1" (uuid d1ebc03f-0380-4225-b200-6a14ac4a87a0))
     (pin "2" (uuid a96c1de2-74ec-4ab1-80c7-c025f2ab932f))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "R16") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+3V3") (at 125.095 136.525 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid af6b848f-73b9-4d92-be1f-e22a2fcc380d)
-    (property "Reference" "#PWR039" (at 125.095 140.335 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3V3" (at 125.095 132.715 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 125.095 136.525 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 125.095 136.525 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b4ff92e2-5ed2-4c84-ad73-59684a4c3541))
-    (instances
-      (project "RP2040-DebugProbe"
-        (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
-          (reference "#PWR039") (unit 1)
         )
       )
     )
@@ -5621,7 +5192,7 @@
     (pin "1" (uuid c33e7044-13ec-4c73-b4ef-04460b7848ac))
     (pin "2" (uuid e0719f4d-8d23-4748-b12a-8dbd294b3442))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "C14") (unit 1)
         )
@@ -5646,7 +5217,7 @@
     )
     (pin "1" (uuid addb877d-02a4-48fb-90d4-3fd11fad7936))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR08") (unit 1)
         )
@@ -5672,7 +5243,7 @@
     (pin "1" (uuid 51539d1e-c21f-42c1-beed-1b14a34dcf35))
     (pin "2" (uuid b54e62e2-9381-44be-a7a1-d1160d34b8c0))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "R15") (unit 1)
         )
@@ -5697,34 +5268,9 @@
     )
     (pin "1" (uuid afa7e901-769d-422a-a1fe-1a83295c2ea8))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR021") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 78.74 151.13 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid c2d88a03-a44f-4538-935d-2053e6999258)
-    (property "Reference" "#PWR053" (at 78.74 157.48 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 78.74 154.94 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 78.74 151.13 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 78.74 151.13 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e8db5aaa-f14f-4574-a5bb-7cad428edece))
-    (instances
-      (project "RP2040-DebugProbe"
-        (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
-          (reference "#PWR053") (unit 1)
         )
       )
     )
@@ -5748,7 +5294,7 @@
     (pin "1" (uuid 0b9474b8-2c80-4733-a627-5d6f05561237))
     (pin "2" (uuid b4367c9e-4006-49f4-bbc2-dce343408b24))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "C9") (unit 1)
         )
@@ -5774,7 +5320,7 @@
     (pin "1" (uuid e634bdfe-e443-425f-92d4-5040da042441))
     (pin "2" (uuid c64790ab-e95c-4116-9dca-ce81da25faa2))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "R7") (unit 1)
         )
@@ -5800,7 +5346,7 @@
     (pin "1" (uuid 1d9c3c21-1d1e-4a00-b307-10c29f8410e8))
     (pin "2" (uuid 9f8ef516-fe51-45ac-9018-db50550bb101))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "R14") (unit 1)
         )
@@ -5825,7 +5371,7 @@
     )
     (pin "1" (uuid dab68837-39cf-4e0a-8e25-aceae5cfea61))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR058") (unit 1)
         )
@@ -5850,7 +5396,7 @@
     )
     (pin "1" (uuid 923191b5-c24a-4290-a47c-ea5d932a0385))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR038") (unit 1)
         )
@@ -5875,36 +5421,9 @@
     )
     (pin "1" (uuid 90eda527-85ce-419e-b8cb-c985113183b4))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR029") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector_Generic:Conn_01x03") (at 125.73 186.055 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid cb0a70bf-dfe0-4e54-8147-cbc32020837c)
-    (property "Reference" "J2" (at 123.19 184.785 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "CONN_MCU_UART" (at 123.19 187.325 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (at 125.73 186.055 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 125.73 186.055 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid 3ca5c3a9-c0e0-423b-a26c-b56155177404))
-    (pin "1" (uuid d82f76a7-92df-4e5d-8f16-f438364f2e23))
-    (pin "3" (uuid d5556cf7-d57e-4dfb-b4cd-5621b0a916ea))
-    (instances
-      (project "RP2040-DebugProbe"
-        (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
-          (reference "J2") (unit 1)
         )
       )
     )
@@ -5928,7 +5447,7 @@
     (pin "1" (uuid 89289593-f228-42ba-9de5-d04ff9843c51))
     (pin "2" (uuid 5f6bc57d-97cb-48e9-acee-e68986eeadac))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "C19") (unit 1)
         )
@@ -5954,37 +5473,9 @@
     (pin "1" (uuid 71c6b953-41ba-4b42-abe2-b3230c9f336e))
     (pin "2" (uuid 0a39cffd-387a-4f13-9687-92592a7391f5))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "C10") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Switch:SW_Push_Dual") (at 85.09 66.04 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid ce31c972-ba62-4b37-8e52-9c8fa57ef990)
-    (property "Reference" "SW1" (at 85.09 58.42 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "BOOTSEL" (at 85.09 60.96 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "PCM_4ms_Switch:Button_Tact_Sqkg" (at 85.09 60.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 85.09 60.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 561708ff-6769-4209-9ca3-d91601ef813a))
-    (pin "2" (uuid 73648ac0-8a65-4a26-88bb-0faa74975e06))
-    (pin "3" (uuid af1f7860-1ef1-4cd6-a4fa-a9dd9a27224f))
-    (pin "4" (uuid e81518fa-2b67-4dd8-aa5c-815d15dea8e2))
-    (instances
-      (project "RP2040-DebugProbe"
-        (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
-          (reference "SW1") (unit 1)
         )
       )
     )
@@ -6008,7 +5499,7 @@
     (pin "1" (uuid f593f0bf-2161-46be-b867-18a5157d6f49))
     (pin "2" (uuid 59d4b85a-0458-4c3b-a4a3-99e697c250b0))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "D7") (unit 1)
         )
@@ -6016,24 +5507,24 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 130.81 186.055 90) (mirror x) (unit 1)
+  (symbol (lib_id "power:GND") (at 137.16 173.99 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d0473336-4288-497e-826f-dd682d630b0a)
-    (property "Reference" "#PWR054" (at 137.16 186.055 0)
+    (property "Reference" "#PWR054" (at 143.51 173.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 135.89 186.055 90)
+    (property "Value" "GND" (at 142.24 173.99 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 130.81 186.055 0)
+    (property "Footprint" "" (at 137.16 173.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 130.81 186.055 0)
+    (property "Datasheet" "" (at 137.16 173.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 2329cdba-6a5c-4625-85ac-808294ce8b4a))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR054") (unit 1)
         )
@@ -6059,7 +5550,7 @@
     (pin "1" (uuid 5486ed61-02ec-433b-ab55-9951bfbfc708))
     (pin "2" (uuid 1ae98f1c-8b28-46c9-9d35-b1b3bf5f7992))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "C1") (unit 1)
         )
@@ -6084,7 +5575,7 @@
     )
     (pin "1" (uuid b68cc2a7-940a-49d3-960c-84240ad7fa21))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR063") (unit 1)
         )
@@ -6110,7 +5601,7 @@
     (pin "1" (uuid 18df1ba8-f9fb-4dfc-b63a-a4db68bf9860))
     (pin "2" (uuid 5df34b04-86c4-45dd-b73e-e7dc267e60a2))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "C15") (unit 1)
         )
@@ -6135,7 +5626,7 @@
     )
     (pin "1" (uuid fcd3711a-afe6-45f9-bf74-c6dea97aef6d))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR028") (unit 1)
         )
@@ -6160,7 +5651,7 @@
     )
     (pin "1" (uuid 0c5e8ed1-11b7-459d-854e-04e4166bb4fe))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR062") (unit 1)
         )
@@ -6185,7 +5676,7 @@
     )
     (pin "1" (uuid 3265fa55-3b17-47e7-91ed-496fdb3a2da7))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR069") (unit 1)
         )
@@ -6210,7 +5701,7 @@
     )
     (pin "1" (uuid 4e5f093d-775e-45f9-8971-8ac0c541be63))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR051") (unit 1)
         )
@@ -6236,7 +5727,7 @@
     (pin "1" (uuid e501b718-284d-42a7-ab15-4ecd9f206492))
     (pin "2" (uuid dc083df1-7ba7-44b1-a50b-f81911fddfd8))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "R5") (unit 1)
         )
@@ -6261,7 +5752,7 @@
     )
     (pin "1" (uuid da5bf296-6d6d-4523-94a4-7e75b857bed6))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR034") (unit 1)
         )
@@ -6342,36 +5833,9 @@
     (pin "8" (uuid 017d80f7-6105-448b-8051-cdefb9c08c3a))
     (pin "9" (uuid e1ad1bed-499b-415d-8bd9-53e36c7b18a9))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "U2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Regulator_Linear:AMS1117-3.3") (at 59.69 179.07 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid f0605fc6-5559-4bf2-9176-77d907d9e015)
-    (property "Reference" "U5" (at 59.69 172.72 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "AMS1117-3.3" (at 59.69 175.26 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2" (at 59.69 173.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf" (at 62.23 185.42 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 0a54ddbf-9d37-484b-8a10-45082752021a))
-    (pin "2" (uuid 23154e80-1c34-4b26-89ab-37a2bba9645b))
-    (pin "3" (uuid c6c85b63-1de8-4f74-845c-ee21602897c2))
-    (instances
-      (project "RP2040-DebugProbe"
-        (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
-          (reference "U5") (unit 1)
         )
       )
     )
@@ -6394,7 +5858,7 @@
     )
     (pin "1" (uuid 7791a18a-f254-40bf-96a5-997afe57f8b5))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR018") (unit 1)
         )
@@ -6419,43 +5883,9 @@
     )
     (pin "1" (uuid 3d7d6178-5397-40b6-ab07-43978449fb95))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR052") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:Conn_ARM_JTAG_SWD_10") (at 125.095 151.765 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid f5b2f594-c5c0-4db9-9d76-706fae2b5ad1)
-    (property "Reference" "J1" (at 113.665 150.495 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "CONN_MCU_JTAG" (at 113.665 153.035 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical" (at 125.095 151.765 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" (at 116.205 183.515 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 75d54e41-7bd7-47bf-830a-e38c71167fac))
-    (pin "10" (uuid a9227ea1-ee4f-40f3-a809-bf0136ce2525))
-    (pin "2" (uuid 5ce43c07-586d-4898-be46-cc0336b50fa5))
-    (pin "3" (uuid d4f61aa5-dd95-49bd-b34a-7c7d5cdcf7ad))
-    (pin "4" (uuid c00cf82a-c284-46fd-80e5-b8a23900331f))
-    (pin "5" (uuid 83ecdf5e-22b3-4f2b-810c-2e5d41e46cce))
-    (pin "6" (uuid e3f6ebf3-ba61-45c5-aff0-403695e5b359))
-    (pin "7" (uuid 896d0201-aaa5-48dd-87e6-d0752fa67cd8))
-    (pin "8" (uuid 2681a499-4163-4d75-8531-ed04d48443ec))
-    (pin "9" (uuid 0606bf8d-41d1-471e-ba57-434d99c5a48e))
-    (instances
-      (project "RP2040-DebugProbe"
-        (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
-          (reference "J1") (unit 1)
         )
       )
     )
@@ -6478,7 +5908,7 @@
     )
     (pin "1" (uuid 2df528e4-871d-4bf2-a7cf-1e0f178b6d83))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR01") (unit 1)
         )
@@ -6504,7 +5934,7 @@
     (pin "1" (uuid 9addddb4-f6e6-43bc-b90d-370c277e5ce3))
     (pin "2" (uuid 2e747ebe-29db-4c28-8398-7b404bfdad18))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "R6") (unit 1)
         )
@@ -6529,7 +5959,7 @@
     )
     (pin "1" (uuid d1fd22e0-2296-4083-93e5-3f4fd3e67457))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR014") (unit 1)
         )
@@ -6554,7 +5984,7 @@
     )
     (pin "1" (uuid 66d0d1bf-ec80-4a3b-b615-57c64f4ca85a))
     (instances
-      (project "RP2040-DebugProbe"
+      (project "RP2040-MicroProbe"
         (path "/9a38a81c-7302-494f-9784-2ab4342a0a1d"
           (reference "#PWR06") (unit 1)
         )

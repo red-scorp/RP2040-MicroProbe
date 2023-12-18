@@ -455,7 +455,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "RP2040-DebugProbe.kicad_pro",
+    "filename": "RP2040-MicroProbe.kicad_pro",
     "version": 1
   },
   "net_settings": {
