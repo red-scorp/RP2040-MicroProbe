@@ -6,7 +6,7 @@
 
   (title_block
     (title "RP2040-MicroProbe-0010")
-    (date "2023-12-18")
+    (date "2023-12-19")
     (rev "1.0")
     (company "(c) 2023 Andriy Golovnya")
     (comment 1 "RP2040 based Micro Debug Probe")
@@ -3893,7 +3893,7 @@
     )
   )
 
-  (symbol (lib_id "Jumper:SolderJumper_2_Open") (at 256.54 97.79 0) (unit 1)
+  (symbol (lib_id "Jumper:SolderJumper_2_Open") (at 256.54 97.79 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 61703ead-95d2-4e91-92ea-5d04caa010a0)
     (property "Reference" "JP1" (at 256.54 91.44 0)
