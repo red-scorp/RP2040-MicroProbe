@@ -532,7 +532,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "doc/RP2040-DebugProbe.step",
+      "step": "doc/RP2040-MicroProbe.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
