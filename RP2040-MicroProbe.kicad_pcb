@@ -7,9 +7,9 @@
   (paper "A4")
   (title_block
     (title "RP2040-MicroProbe-0010")
-    (date "2023-12-24")
+    (date "2024-01-08")
     (rev "1.0")
-    (company "(c) 2023 Andriy Golovnya")
+    (company "(c) 2023-2024 Andriy Golovnya")
     (comment 1 "RP2040 based Micro Debug Probe")
     (comment 2 "Designed in Germany")
   )
